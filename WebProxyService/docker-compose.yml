@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  hostingwps:
+    image: ${DOCKER_REGISTRY-}hostingwps
+    build:
+      context: .\HostingWPS
+      dockerfile: Dockerfile

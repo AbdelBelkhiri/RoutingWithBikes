@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.5.0/css/ol.css" type="text/css">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.5.0/build/ol.js"></script>
+    </head>
+
+    <body>
+        <!-- FORMULAIRE -->
+        <div id="struct_page">
+            <div id="conteneur_page">
+                <div class="contenu_page">
+                    <section>
+
+                        <h2 style="text-align:center;">Let's go biking with JcDecaux <i class="fas fa-biking"></i></h2>
+
+                        <form>
+                            <label for="startingSelected">
+                                <p class="texte_form">Départ</p>  
+                                <input name="addressStartingInput" type="text" id="startingSelected">
+                            </label>
+
+                            <label for="arrivalSelected">
+                                <p class="texte_form">Arrivée</p>
+                                <input name="addressArrivalInput" type="text" id="arrivalSelected">
+                            </label>
+
+                            <button id="processRouteButton" class="butt" onclick="processRoute(event)">Valider <i class="fas fa-check-double"></i></button>
+                        </form>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+        <!-- MAP -->
+        <div id="struct_map">
+            <div id="conteneur_map" class="conteneur_map">
+                <div class="contenu_map">
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <div id="struct_footer">
+            <div id="conteneur_footer">
+                <div class="contenu_footer">
+                    <p>Abdel Belkhiri &copy; 2020-2021</p>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="./app.js"></script>
+
+    </body>
+
+</html>

@@ -1,0 +1,117 @@
+
+body{
+    margin: 0;
+    background-color: #224;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 16px;
+    background-color: #224;
+    height: auto;
+    font-family: monospace;
+    font-size: 18px;
+    line-height: 1.5;
+    color: white;
+    padding-bottom: 0.7em;
+}
+
+section h2{
+    margin-bottom: 0;
+}
+
+.texte_form {
+    color: #FFF;
+    font-family: monospace;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width:55%;
+}
+
+form p{
+    text-align: center;
+}
+
+input {
+    display: block;
+    background-color: transparent;
+    color: inherit;
+    border: 2px solid currentColor;
+    border-radius: 6px;
+    font-size: inherit;
+    line-height: inherit;
+    padding: 2px 6px;
+    margin: auto;
+}
+input:focus {
+    outline: none;
+    border-color: #34eb71; 
+    box-shadow: 0 0 0 1px #34eb71;
+}
+label {
+    display: block;
+    margin-bottom: 4px;
+}
+label:last-child {
+    margin-top: 16px;
+}
+section:nth-child(2) {
+    border-top: 1px solid #999;
+    color: #224;
+    background-color: white;
+}
+
+#struct_footer{
+    width: 100%;
+    background-color: rgba(34,34,68,.8);
+
+    padding: 0.1em;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+}
+
+#conteneur_map{
+    height: 450px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #224;
+}
+
+/* *******button******** */
+.butt{
+    text-align:center;
+    border-radius: 1em;
+    padding: 0.5em 1em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    margin-top: 0.9em;
+    font-family: monospace;
+    text-decoration: none;
+    border: none;
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+    outline: none;
+    font-size: 16px;
+    background-color: white;
+}
+
+.butt:hover, .butt:focus{
+    background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 100%);
+    transform: translateY(-6px);
+}
+
+.butt:hover::before, .butt:focus::before {
+    opacity: 1;
+  }
