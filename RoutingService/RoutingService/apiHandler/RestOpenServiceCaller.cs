@@ -40,7 +40,7 @@ namespace RoutingService.apiHandler
             string new_to_lat = To.latitude.ToString(new CultureInfo("en-US"));
             string new_to_lng = To.longitude.ToString(new CultureInfo("en-US"));
 
-            string specificUrl = "https://api.openrouteservice.org/v2/directions/cycling-regular?api_key=5b3ce3597851110001cf62485683668221ff4c76a4f6d5fe1c98e769" + "&start=" + new_from_long + "," + new_from_lat + "&end=" + new_to_lng + "," + new_to_lat;
+            string specificUrl = "https://api.openrouteservice.org/v2/directions/cycling-regular?api_key=api-key-here" + "&start=" + new_from_long + "," + new_from_lat + "&end=" + new_to_lng + "," + new_to_lat;
 
 
             string responseBody = "null";
