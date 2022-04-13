@@ -99,7 +99,7 @@ namespace RoutingService
                 RequestUri = new Uri("https://forward-reverse-geocoding.p.rapidapi.com/v1/search?q=" + address + "&format=json&accept-language=en&polygon_threshold=0.0"),
                 Headers =
                 {
-                    { "x-rapidapi-key", "0655367576msha3a7d7c056490aap17bf27jsndbf7a0c72699" },
+                    { "x-rapidapi-key", "api-key-here" },
                     { "x-rapidapi-host", "forward-reverse-geocoding.p.rapidapi.com" },
                 },
             };
